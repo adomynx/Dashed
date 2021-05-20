@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta charset="UTF-8">
+  	 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dashboard</title>
+  </head>
+  <body id="body">
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav_icon" onclick="toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="navbar__left">
+          <a class="active_link" href="#">Admin</a>
+        </div>
+        <div class="navbar__right">
+          <a href="#">
+          	<i class="fa fa-heart" aria-hidden="true"></i>
+          
+          </a>
+          <a href="#">
+          <i class="fa fa-bell" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <img width="30" src="assets/hero1.jpg" alt="" />
+            <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+          </a>
+        </div>
+      </nav>
+
+      <main>
+        <div class="main__container">
+          <!-- MAIN TITLE STARTS HERE -->
+
+          <div class="main__title">
+            <img src="assets/gg.svg" alt="" />
+            <div class="main__greeting">
+              <h1>Hi Champion!</h1>
+              <p>Welcome to your dashboard</p>
+            </div>
+          </div>
+
+          <!-- MAIN TITLE ENDS HERE -->
+
+          <!-- MAIN CARDS STARTS HERE -->
+          <div class="main__cards">
+            <div class="card">
+              <i
+                class="fa fa-user-o fa-2x text-lightblue"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Courses Completed</p>
+                <span class="font-bold text-title">22</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i class="fa fa-calendar fa-2x text-red" aria-hidden="true"></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Total Time Spend</p>
+                <span class="font-bold text-title">180 mins</span>
+              </div>
+            </div>
+            <div class="card">
+              <i
+                class="fa fa-video-camera fa-2x text-yellow"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Number of Videos</p>
+                <span class="font-bold text-title">340</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i
+                class="fa fa-bullseye fa-2x text-lightblue "
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Score</p>
+                <span class="font-bold text-title">645</span>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN CARDS ENDS HERE -->
+
+          <!-- CHARTS STARTS HERE -->
+          <div class="charts">
+            <div class="charts__left">
+              <div class="charts__left__title">
+                <div>
+                  <h1>Monthly Time Spend</h1>
+                  <p>Bar Graph</p>
+                </div>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+              </div>
+              <div id="apex1"></div>
+            </div>
+
+            <article class="leaderboard">
+  <header>
+
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve" class="leaderboard__icon">
+      <g>
+        <g>
+          <path d="M466.45,49.374c-7.065-8.308-17.368-13.071-28.267-13.071H402.41v-11.19C402.41,11.266,391.143,0,377.297,0H134.705
+      c-13.848,0-25.112,11.266-25.112,25.112v11.19H73.816c-10.899,0-21.203,4.764-28.267,13.071
+      c-6.992,8.221-10.014,19.019-8.289,29.624c9.4,57.8,45.775,108.863,97.4,136.872c4.717,11.341,10.059,22.083,16.008,32.091
+      c19.002,31.975,42.625,54.073,68.627,64.76c2.635,26.644-15.094,51.885-41.794,57.9c-0.057,0.013-0.097,0.033-0.153,0.046
+      c-5.211,1.245-9.09,5.921-9.09,11.513v54.363h-21.986c-19.602,0-35.549,15.947-35.549,35.549v28.058
+      c0,6.545,5.305,11.85,11.85,11.85H390.56c6.545,0,11.85-5.305,11.85-11.85v-28.058c0-19.602-15.947-35.549-35.549-35.549h-21.988
+      V382.18c0-5.603-3.893-10.286-9.118-11.52c-0.049-0.012-0.096-0.028-0.145-0.04c-26.902-6.055-44.664-31.55-41.752-58.394
+      c25.548-10.86,48.757-32.761,67.479-64.264c5.949-10.009,11.29-20.752,16.008-32.095c51.622-28.01,87.995-79.072,97.395-136.87
+      C476.465,68.392,473.443,57.595,466.45,49.374z M60.652,75.192c-0.616-3.787,0.431-7.504,2.949-10.466
+      c2.555-3.004,6.277-4.726,10.214-4.726h35.777v21.802c0,34.186,4.363,67.3,12.632,97.583
+      C89.728,153.706,67.354,116.403,60.652,75.192z M366.861,460.243c6.534,0,11.85,5.316,11.85,11.85v16.208H134.422v-16.208
+      c0-6.534,5.316-11.85,11.85-11.85H366.861z M321.173,394.03v42.513H191.96V394.03H321.173z M223.037,370.331
+      c2.929-3.224,5.607-6.719,8.002-10.46c7.897-12.339,12.042-26.357,12.228-40.674c4.209,0.573,8.457,0.88,12.741,0.88
+      c4.661,0,9.279-0.358,13.852-1.036c0.27,19.239,7.758,37.45,20.349,51.289H223.037z M378.709,81.803
+      c0,58.379-13.406,113.089-37.747,154.049c-23.192,39.03-53.364,60.525-84.956,60.525c-31.597,0-61.771-21.494-84.966-60.523
+      c-24.342-40.961-37.748-95.671-37.748-154.049V25.112c0-0.78,0.634-1.413,1.412-1.413h242.591c0.78,0,1.414,0.634,1.414,1.413
+      V81.803z M451.348,75.192c-6.702,41.208-29.074,78.51-61.569,104.191c8.268-30.283,12.631-63.395,12.631-97.58V60.001h35.773
+      c3.938,0,7.66,1.723,10.214,4.726C450.915,67.688,451.963,71.405,451.348,75.192z" />
+        </g>
+      </g>
+      <g>
+        <g>
+          <path d="M327.941,121.658c-1.395-4.288-5.103-7.414-9.566-8.064l-35.758-5.196l-15.991-32.402
+      c-1.997-4.044-6.116-6.605-10.626-6.605c-4.511,0-8.63,2.561-10.626,6.605l-15.991,32.402l-35.758,5.196
+      c-4.464,0.648-8.172,3.775-9.566,8.065c-1.393,4.291-0.231,8.999,2.999,12.148l25.875,25.221l-6.109,35.613
+      c-0.763,4.446,1.064,8.938,4.714,11.59c3.648,2.651,8.487,3,12.479,0.902L256,190.32l31.982,16.813
+      c1.734,0.911,3.627,1.36,5.512,1.36c2.456,0,4.902-0.763,6.966-2.263c3.65-2.652,5.477-7.144,4.714-11.59l-6.109-35.613
+      l25.875-25.221C328.172,130.658,329.334,125.949,327.941,121.658z M278.064,146.405c-2.793,2.722-4.068,6.644-3.408,10.489
+      l3.102,18.09l-16.245-8.541c-1.725-0.908-3.62-1.36-5.514-1.36c-1.894,0-3.788,0.454-5.514,1.36l-16.245,8.541l3.102-18.09
+      c0.66-3.844-0.615-7.766-3.408-10.489l-13.141-12.81l18.162-2.64c3.859-0.56,7.196-2.985,8.922-6.482l8.123-16.458l8.122,16.458
+      c1.727,3.497,5.062,5.921,8.922,6.482l18.162,2.64L278.064,146.405z" />
+        </g>
+      </g>
+    </svg>
+
+    <h1 class="leaderboard__title"><span class="leaderboard__title--top">Our</span><span class="leaderboard__title--bottom">Leaderboard</span></h1>
+  </header>
+  
+  <main class="leaderboard__profiles">
+    <article class="leaderboard__profile">
+      <img src="assets/hero1.jpg" alt="Mark Zuckerberg" class="leaderboard__picture">
+      <span class="leaderboard__name">Kartik Wakekar</span>
+      <span class="leaderboard__value">3245 points</span>
+    </article>
+    
+    <article class="leaderboard__profile">
+      <img src="assets/hero1.jpg" alt="Dustin Moskovitz" class="leaderboard__picture">
+      <span class="leaderboard__name">Pravin Wagh</span>
+      <span class="leaderboard__value">2568 points</span>
+    </article>
+    
+    <article class="leaderboard__profile">
+      <img src="assets/hero1.jpg" alt="Elizabeth Holmes" class="leaderboard__picture">
+      <span class="leaderboard__name">Raj Patwari</span>
+      <span class="leaderboard__value">1589 points</span>
+    </article>
+    
+    <article class="leaderboard__profile">
+      <img src="assets/hero1.jpg" alt="Evan Spiegel" class="leaderboard__picture">
+      <span class="leaderboard__name">Shubham Jadhao</span>
+     <span class="leaderboard__value">258 points</span>
+    </article>
+  </main>
+</div>
+
+<!------- Goal tab start -------->
+  <div class="main__cards">
+  	<svg viewBox="0 0 0 0" style="position: absolute; z-index: -1; opacity: 0;">
+  <defs>
+    <linearGradient id="boxGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="25" y2="25">
+      <stop offset="0%"   stop-color="#27FDC7"/>
+      <stop offset="100%" stop-color="#0FC0F5"/>
+    </linearGradient>
+
+    <linearGradient id="lineGradient">
+      <stop offset="0%"    stop-color="#0FC0F5"/>
+      <stop offset="100%"  stop-color="#27FDC7"/>
+    </linearGradient>
+
+    <path id="todo__line" stroke="url(#lineGradient)" d="M21 12.3h168v0.1z"></path>
+    <path id="todo__box" stroke="url(#boxGradient)" d="M21 12.7v5c0 1.3-1 2.3-2.3 2.3H8.3C7 20 6 19 6 17.7V7.3C6 6 7 5 8.3 5h10.4C20 5 21 6 21 7.3v5.4"></path>
+    <path id="todo__check" stroke="url(#boxGradient)" d="M10 13l2 2 5-5"></path>
+    <circle id="todo__circle" cx="13.5" cy="12.5" r="10"></circle>
+  </defs>
+</svg>
+
+
+<div class="todo-list">
+  <label class="todo">
+    <input class="todo__state" type="checkbox" />
+    
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 25" class="todo__icon">
+      <use xlink:href="#todo__line" class="todo__line"></use>
+      <use xlink:href="#todo__box" class="todo__box"></use>
+      <use xlink:href="#todo__check" class="todo__check"></use>
+      <use xlink:href="#todo__circle" class="todo__circle"></use>
+    </svg>
+
+    <div class="todo__text">Do a very important task</div>
+    
+  </label>
+
+  <label class="todo">
+
+    <input class="todo__state" type="checkbox" />
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 25" class="todo__icon">
+      <use xlink:href="#todo__line" class="todo__line"></use>
+      <use xlink:href="#todo__box" class="todo__box"></use>
+      <use xlink:href="#todo__check" class="todo__check"></use>
+      <use xlink:href="#todo__circle" class="todo__circle"></use>
+    </svg>
+
+    <div class="todo__text">Another important task</div>
+    
+  </label>
+
+  <label class="todo">
+    <input class="todo__state" type="checkbox" />
+    
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 25" class="todo__icon">
+      <use xlink:href="#todo__line" class="todo__line"></use>
+      <use xlink:href="#todo__box" class="todo__box"></use>
+      <use xlink:href="#todo__check" class="todo__check"></use>
+      <use xlink:href="#todo__circle" class="todo__circle"></use>
+    </svg>
+    
+    <div class="todo__text">Not so important task</div>
+  </label>
+</div>
+<div>
+<svg width="800" height="600" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg>
+    <rect x="10" y="10" height="377" width="640" style="fill: #e75040;" />
+    <rect x="30" y="70" rx="5" ry="5" height="33" width="600" style="fill: #cc3b2d" />
+    <text id="month_name" x="300" y="50" fill="#ffffff" style="font-size:22px; font-family: Arial; font-weight:bold;"></text>
+    <rect x="45" y="159" rx="5" ry="5" height="33" width="40" style="fill: #cc3b2d" />
+    <svg x="10" y="70">
+      <g>
+        <text x="35" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">MON</text>
+        <text x="126" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">TUE</text>
+        <text x="216" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">WED</text>
+        <text x="304" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">THU</text>
+        <text x="396" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">FRI</text>
+        <text x="473" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">SAT</text>
+        <text x="560" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">SUN</text>
+      </g>
+    </svg>
+    <svg x="10" y="120">
+      <g>
+        <text x="49" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+        <text x="141" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+        <text x="230" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">1</text>
+        <text x="317" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">2</text>
+        <text x="405" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">3</text>
+        <text x="482" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">4</text>
+        <text x="577" y="24" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">5</text>
+      </g>
+      <g>
+        <text x="50" y="63" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">6</text>
+        <text x="141" y="63" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">7</text>
+        <text x="229" y="63" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">8</text>
+        <text x="315" y="63" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">9</text>
+        <text x="398" y="63" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">10</text>
+        <text x="477" y="63" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">11</text>
+        <text x="570" y="63" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">12</text>
+      </g>
+      <g>
+        <text x="43" y="104" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">13</text>
+        <text x="134" y="104" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">14</text>
+        <text x="221" y="104" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">15</text>
+        <text x="309" y="104" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">16</text>
+        <text x="399" y="104" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">17</text>
+        <text x="477" y="104" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">18</text>
+        <text x="571" y="104" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">19</text>
+      </g>
+      <g>
+        <text x="43" y="145" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">20</text>
+        <text x="134" y="145" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">21</text>
+        <text x="221" y="145" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">22</text>
+        <text x="309" y="145" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">23</text>
+        <text x="399" y="145" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">24</text>
+        <text x="477" y="145" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">25</text>
+        <text x="571" y="145" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">26</text>
+      </g>
+      <g>
+        <text x="43" y="186" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">27</text>
+        <text x="134" y="186" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">28</text>
+        <text x="221" y="186" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">29</text>
+        <text x="309" y="186" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">30</text>
+        <text x="399" y="186" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;">31</text>
+        <text x="475" y="186" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+        <text x="570" y="186" style="fill: #ffffff; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+      </g>
+    </svg>
+  </svg>
+
+</svg></div></div>
+         
+ 
+<!------- Goal tab ends -------->
+
+
+          <!-- CHARTS ENDS HERE -->
+        </div>
+
+      </main>
+
+      <div id="sidebar">
+        <div class="sidebar__title">
+          <div class="sidebar__img">
+            <img src="assets/logo.png" alt="logo" />
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>Dashboard</h1>
+          </div>
+          <i
+            onclick="closeSidebar()"
+            class="fa fa-times"
+            id="sidebarIcon"
+            aria-hidden="true"
+          ></i>
+        </div>
+
+        <div class="sidebar__menu">
+          <div class="sidebar__link active_menu_link">
+            <i class="fa fa-home"></i>
+            <a href="#">Home</a>
+          </div>
+          <h2>Services</h2>
+          <div class="sidebar__link">
+           <i class="fa fa-graduation-cap"></i>
+            <a href="#">Tutoring</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-flag"></i>
+            <a href="#">My courses</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <a href="#">My school </a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+            <a href="#">Tests</a>
+          </div>
+          <h2>Essentials</h2>
+          <div class="sidebar__link">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <a href="#">Notes</a>
+          </div>
+          <div class="sidebar__link">
+           <i class="fa fa-bookmark" aria-hidden="true"></i>
+            <a href="#">Bookmarks</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <a href="#">Settings</a>
+          </div>
+          <div class="sidebar__logout">
+            <i class="fa fa-power-off"></i>
+            <a href="#">Log out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
